@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SqueeGee</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/SqueeGee (2).png') }}" type="image/png">
+    
+    <!-- External CSS File -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons (for Tooltips) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/SqueeGee (2).png') }}" alt="SqueeGee Logo" class="logo mt-5">
+        </div>
+        <!-- Light/Dark Mode Toggle Button -->
+    <button id="mode-toggle" class="btn btn-light mode-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+        <!-- File Upload Form -->
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Upload CSV File</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="file">Choose a CSV file:</label>
+                        <input type="file" name="file" class="form-control" id="file" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Handle Missing Values</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="missing_values">Choose a strategy:</label>
+                        <select name="missing_values" class="form-control">
+                            <option value="drop">Drop Rows with Missing Values</option>
+                            <option value="mean">Impute Using Mean</option>
+                            <option value="median">Impute Using Median</option>
+                            <option value="mode">Impute Using Mode</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Handle Duplicates</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="duplicate_handling">Choose an option:</label>
+                        <select name="duplicate_handling" class="form-control">
+                            <option value="drop">Drop Duplicates</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Remove Outliers</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="outlier_removal">Choose an option:</label>
+                        <select name="outlier_removal" class="form-control">
+                            <option value="none">Do Not Remove</option>
+                            <option value="zscore">Remove Using Z-score</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="z_threshold">Z-score Threshold:</label>
+                        <input type="number" name="z_threshold" class="form-control" value="3" step="0.1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Data Rules -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Custom Data Rules</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="no_negative_values">Columns That Cannot Have Negative Values (comma-separated)</label>
+                        <input type="text" name="no_negative_values" class="form-control" placeholder="e.g., Age, Salary">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="max_values">Max Values for Columns (format: column=value, comma-separated)</label>
+                        <input type="text" name="max_values" class="form-control" placeholder="e.g., Age=100, Salary=500000">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="allowed_categories">Allowed Categories (format: column=value1|value2, comma-separated)</label>
+                        <input type="text" name="allowed_categories" class="form-control" placeholder="e.g., Gender=Male|Female, Status=Active|Inactive">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Upload and Clean</button>
+        </form>
+
+        {% if original_data is not none and not original_data.empty %}
+            <h3 class="mt-5">Original Data (Preview - First 5 Rows)</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        {% for column in original_data.columns %}
+                            <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for index, row in original_data.iterrows() %}
+                        <tr>
+                            {% for column in original_data.columns %}
+                                <td>{{ row[column] }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+            <h3 class="mt-5">Cleaned Data (Preview - First 5 Rows)</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        {% for column in cleaned_data.columns %}
+                            <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for index, row in cleaned_data.iterrows() %}
+                        <tr>
+                            {% for column in cleaned_data.columns %}
+                                <td class="{{ 'highlight' if row[column] != original_data[column].iloc[index] else '' }}">
+                                    {{ row[column] }}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+            {% if cleaned_file_path %}
+            <div class="mt-4">
+                <a href="{{ url_for('download_file') }}" class="btn btn-success">Download Cleaned CSV</a>
+            </div>
+            {% endif %}
+
+            <div class="mt-4">
+                <p><strong>Changes Made:</strong></p>
+                <ul>
+                    {% if change_info.removed_duplicates %}
+                        <li>Removed {{ change_info.removed_duplicates }} duplicate rows.</li>
+                    {% endif %}
+                    <li>Missing values processed: {{ change_info.missing_values }}</li>
+                    {% if change_info.outliers_removed %}
+                        <li>Removed {{ change_info.outliers_removed }} outliers.</li>
+                    {% endif %}
+                    {% if change_info.rule_violations %}
+                        <li>Fixed {{ change_info.rule_violations }} rule violations.</li>
+                    {% endif %}
+                    {% for msg in change_info.messages %}
+                        <li>{{ msg }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>   
+    
+    <!-- External JS File -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
