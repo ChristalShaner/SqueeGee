@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, send_file, jsonify
 import pandas as pd
 import os
 import logging
@@ -105,6 +105,22 @@ def home():
                            cleaned_data=cleaned_data.head(5), 
                            change_info=change_info, 
                            cleaned_file_path=cleaned_file_path)
+
+@app.route("/data_summary")
+def data_summary():
+    """Provide JSON summary for visualization."""
+    file_path = os.path.join(UPLOAD_FOLDER, "cleaned_data.csv")
+    if os.path.exists(file_path):
+        df = pd.read_csv(file_path)
+        if df.empty:
+            return jsonify({"error": "Cleaned data is empty"}), 400
+        summary = {
+            "columns": df.columns.tolist(),
+            "numeric_columns": df.select_dtypes(include=[np.number]).columns.tolist(),
+            "data": df.to_dict(orient="records"),
+        }
+        return jsonify(summary)
+    return jsonify({"error": "No cleaned data available"}), 404
 
 @app.route("/download")
 def download_file():
