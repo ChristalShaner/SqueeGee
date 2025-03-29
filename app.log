@@ -1386,3 +1386,283 @@
 2025-03-26 23:02:57,591 - INFO - 127.0.0.1 - - [26/Mar/2025 23:02:57] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
 2025-03-26 23:02:57,924 - INFO - 127.0.0.1 - - [26/Mar/2025 23:02:57] "GET /data_summary HTTP/1.1" 200 -
 2025-03-26 23:02:58,009 - INFO - 127.0.0.1 - - [26/Mar/2025 23:02:58] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 18:07:43,992 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 18:07:49,496 - INFO - 127.0.0.1 - - [28/Mar/2025 18:07:49] "POST / HTTP/1.1" 200 -
+2025-03-28 18:07:49,905 - INFO - 127.0.0.1 - - [28/Mar/2025 18:07:49] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 18:07:49,905 - INFO - 127.0.0.1 - - [28/Mar/2025 18:07:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 18:07:49,923 - INFO - 127.0.0.1 - - [28/Mar/2025 18:07:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 18:07:50,071 - INFO - 127.0.0.1 - - [28/Mar/2025 18:07:50] "GET /data_summary HTTP/1.1" 200 -
+2025-03-28 18:07:50,081 - INFO - 127.0.0.1 - - [28/Mar/2025 18:07:50] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 18:15:35,274 - INFO - 127.0.0.1 - - [28/Mar/2025 18:15:35] "GET / HTTP/1.1" 200 -
+2025-03-28 18:15:35,589 - INFO - 127.0.0.1 - - [28/Mar/2025 18:15:35] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 18:15:35,589 - INFO - 127.0.0.1 - - [28/Mar/2025 18:15:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 18:15:35,617 - INFO - 127.0.0.1 - - [28/Mar/2025 18:15:35] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 18:20:14,461 - ERROR - Error: '<' not supported between instances of 'str' and 'int'
+2025-03-28 18:20:14,468 - INFO - 127.0.0.1 - - [28/Mar/2025 18:20:14] "POST / HTTP/1.1" 200 -
+2025-03-28 18:20:14,522 - INFO - 127.0.0.1 - - [28/Mar/2025 18:20:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 18:20:14,522 - INFO - 127.0.0.1 - - [28/Mar/2025 18:20:14] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 18:20:14,529 - INFO - 127.0.0.1 - - [28/Mar/2025 18:20:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 18:20:14,927 - INFO - 127.0.0.1 - - [28/Mar/2025 18:20:14] "[33mGET /data_summary HTTP/1.1[0m" 404 -
+2025-03-28 21:21:02,252 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:21:32,167 - INFO - 127.0.0.1 - - [28/Mar/2025 21:21:32] "GET / HTTP/1.1" 200 -
+2025-03-28 21:21:32,429 - INFO - 127.0.0.1 - - [28/Mar/2025 21:21:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:21:32,431 - INFO - 127.0.0.1 - - [28/Mar/2025 21:21:32] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:21:32,432 - INFO - 127.0.0.1 - - [28/Mar/2025 21:21:32] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:27:33,472 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:27:38,021 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:38] "[33mGET /data_summary HTTP/1.1[0m" 404 -
+2025-03-28 21:27:41,399 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-28 21:27:41,614 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:41] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:27:41,615 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:41] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:27:41,882 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:41] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:27:41,891 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:41] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:27:41,928 - INFO - 127.0.0.1 - - [28/Mar/2025 21:27:41] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:28:49,738 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:49] "GET / HTTP/1.1" 200 -
+2025-03-28 21:28:49,780 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:49] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:28:49,780 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:28:49,781 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:49] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:28:49,856 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:49] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:28:58,045 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:58] "POST / HTTP/1.1" 200 -
+2025-03-28 21:28:58,081 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:28:58,081 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:58] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:28:58,082 - INFO - 127.0.0.1 - - [28/Mar/2025 21:28:58] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:29:02,505 - INFO - 127.0.0.1 - - [28/Mar/2025 21:29:02] "[33mGET /data_summary HTTP/1.1[0m" 404 -
+2025-03-28 21:29:06,047 - INFO - 127.0.0.1 - - [28/Mar/2025 21:29:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:29:16,238 - INFO - 127.0.0.1 - - [28/Mar/2025 21:29:16] "POST / HTTP/1.1" 200 -
+2025-03-28 21:29:16,286 - INFO - 127.0.0.1 - - [28/Mar/2025 21:29:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:29:16,292 - INFO - 127.0.0.1 - - [28/Mar/2025 21:29:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:29:16,295 - INFO - 127.0.0.1 - - [28/Mar/2025 21:29:16] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:30:00,465 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:00] "POST / HTTP/1.1" 200 -
+2025-03-28 21:30:00,506 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:30:00,507 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:00] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:30:00,508 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:00] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:30:00,584 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:00] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:30:06,975 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:06] "POST / HTTP/1.1" 200 -
+2025-03-28 21:30:07,021 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:30:07,023 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:07] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:30:07,025 - INFO - 127.0.0.1 - - [28/Mar/2025 21:30:07] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:31:54,648 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:31:58,945 - INFO - 127.0.0.1 - - [28/Mar/2025 21:31:58] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 21:31:59,126 - INFO - 127.0.0.1 - - [28/Mar/2025 21:31:59] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:31:59,127 - INFO - 127.0.0.1 - - [28/Mar/2025 21:31:59] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:31:59,147 - INFO - 127.0.0.1 - - [28/Mar/2025 21:31:59] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:31:59,156 - INFO - 127.0.0.1 - - [28/Mar/2025 21:31:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:31:59,193 - INFO - 127.0.0.1 - - [28/Mar/2025 21:31:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:32:02,660 - INFO - 127.0.0.1 - - [28/Mar/2025 21:32:02] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 21:32:02,698 - INFO - 127.0.0.1 - - [28/Mar/2025 21:32:02] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:32:02,703 - INFO - 127.0.0.1 - - [28/Mar/2025 21:32:02] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:32:02,723 - INFO - 127.0.0.1 - - [28/Mar/2025 21:32:02] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:32:02,730 - INFO - 127.0.0.1 - - [28/Mar/2025 21:32:02] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:32:02,770 - INFO - 127.0.0.1 - - [28/Mar/2025 21:32:02] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:34:28,535 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:34:36,480 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:36] "GET / HTTP/1.1" 200 -
+2025-03-28 21:34:36,745 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:34:36,749 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:36] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:34:36,749 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:34:36,943 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:36] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:34:44,987 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:44] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 21:34:45,025 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:45] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:34:45,033 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:45] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:34:45,351 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:45] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:34:45,353 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:34:45,397 - INFO - 127.0.0.1 - - [28/Mar/2025 21:34:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:38:26,668 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:26] "POST / HTTP/1.1" 200 -
+2025-03-28 21:38:26,705 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:26] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:38:26,706 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:38:26,706 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:26] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:38:26,765 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:26] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:38:36,296 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:36] "GET / HTTP/1.1" 200 -
+2025-03-28 21:38:36,509 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:38:36,510 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:36] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:38:36,514 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:38:42,381 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:42] "POST / HTTP/1.1" 200 -
+2025-03-28 21:38:42,419 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:42] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:38:42,421 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:42] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:38:42,426 - INFO - 127.0.0.1 - - [28/Mar/2025 21:38:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:39:10,805 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:39:10,816 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:39:10,986 - INFO - 127.0.0.1 - - [28/Mar/2025 21:39:10] "POST /clean HTTP/1.1" 200 -
+2025-03-28 21:42:55,448 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:43:02,065 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:02] "GET / HTTP/1.1" 200 -
+2025-03-28 21:43:02,304 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:02] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:43:02,306 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:43:02,306 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:43:09,126 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:09] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 21:43:09,161 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:09] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:43:09,162 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:09] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:43:09,322 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:09] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:43:09,324 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:09] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:43:09,358 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:09] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:43:52,550 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 21:43:52,582 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:52] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:43:52,582 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:52] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:43:52,616 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:52] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:43:52,617 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:52] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:43:52,658 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:52] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:43:53,146 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:53] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 21:43:53,176 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:53] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 21:43:53,177 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:53] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 21:43:53,195 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:43:53,197 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:53] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 21:43:53,221 - INFO - 127.0.0.1 - - [28/Mar/2025 21:43:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 21:44:01,425 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:44:04,521 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:04] "POST / HTTP/1.1" 200 -
+2025-03-28 21:44:04,712 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:04] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:44:04,715 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:04] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:44:04,715 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:44:04,768 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:04] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:44:11,184 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:11] "GET / HTTP/1.1" 200 -
+2025-03-28 21:44:11,404 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:44:11,406 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:11] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:44:11,408 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:11] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:44:23,016 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:23] "POST / HTTP/1.1" 200 -
+2025-03-28 21:44:23,047 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:44:23,048 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:23] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:44:27,811 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:27] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:44:55,581 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:55] "POST / HTTP/1.1" 200 -
+2025-03-28 21:44:55,653 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:44:55,653 - INFO - 127.0.0.1 - - [28/Mar/2025 21:44:55] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:45:02,166 - INFO - 127.0.0.1 - - [28/Mar/2025 21:45:02] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:45:04,333 - INFO - 127.0.0.1 - - [28/Mar/2025 21:45:04] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:47:32,014 - INFO - 127.0.0.1 - - [28/Mar/2025 21:47:32] "POST / HTTP/1.1" 200 -
+2025-03-28 21:47:32,086 - INFO - 127.0.0.1 - - [28/Mar/2025 21:47:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:47:32,091 - INFO - 127.0.0.1 - - [28/Mar/2025 21:47:32] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:47:36,965 - INFO - 127.0.0.1 - - [28/Mar/2025 21:47:36] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:47:39,397 - INFO - 127.0.0.1 - - [28/Mar/2025 21:47:39] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:48:49,326 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:48:58,892 - INFO - 127.0.0.1 - - [28/Mar/2025 21:48:58] "GET / HTTP/1.1" 200 -
+2025-03-28 21:48:59,094 - INFO - 127.0.0.1 - - [28/Mar/2025 21:48:59] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:48:59,095 - INFO - 127.0.0.1 - - [28/Mar/2025 21:48:59] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:48:59,096 - INFO - 127.0.0.1 - - [28/Mar/2025 21:48:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:49:16,545 - INFO - 127.0.0.1 - - [28/Mar/2025 21:49:16] "POST / HTTP/1.1" 200 -
+2025-03-28 21:49:16,578 - INFO - 127.0.0.1 - - [28/Mar/2025 21:49:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:49:16,579 - INFO - 127.0.0.1 - - [28/Mar/2025 21:49:16] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:49:16,580 - INFO - 127.0.0.1 - - [28/Mar/2025 21:49:16] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:49:28,015 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:49:28,030 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:49:28,186 - INFO - 127.0.0.1 - - [28/Mar/2025 21:49:28] "POST /clean HTTP/1.1" 200 -
+2025-03-28 21:51:58,442 - INFO - 127.0.0.1 - - [28/Mar/2025 21:51:58] "GET / HTTP/1.1" 200 -
+2025-03-28 21:51:58,577 - INFO - 127.0.0.1 - - [28/Mar/2025 21:51:58] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:51:58,577 - INFO - 127.0.0.1 - - [28/Mar/2025 21:51:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:51:58,578 - INFO - 127.0.0.1 - - [28/Mar/2025 21:51:58] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:52:05,967 - INFO - 127.0.0.1 - - [28/Mar/2025 21:52:05] "POST / HTTP/1.1" 200 -
+2025-03-28 21:52:06,000 - INFO - 127.0.0.1 - - [28/Mar/2025 21:52:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:52:06,002 - INFO - 127.0.0.1 - - [28/Mar/2025 21:52:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:52:06,003 - INFO - 127.0.0.1 - - [28/Mar/2025 21:52:06] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:52:17,904 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:52:17,911 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:52:18,012 - INFO - 127.0.0.1 - - [28/Mar/2025 21:52:18] "POST /clean HTTP/1.1" 200 -
+2025-03-28 21:55:49,933 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:56:06,310 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:06] "GET / HTTP/1.1" 200 -
+2025-03-28 21:56:06,538 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:06] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:56:06,540 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:56:06,540 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:56:14,757 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:14] "POST / HTTP/1.1" 200 -
+2025-03-28 21:56:14,789 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:56:14,790 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:14] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:56:14,790 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:14] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:56:31,618 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:56:31,661 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:56:31,837 - INFO - 127.0.0.1 - - [28/Mar/2025 21:56:31] "POST /clean HTTP/1.1" 200 -
+2025-03-28 21:58:56,148 - INFO - 127.0.0.1 - - [28/Mar/2025 21:58:56] "[31m[1mPOST /clean HTTP/1.1[0m" 400 -
+2025-03-28 21:58:56,843 - INFO - 127.0.0.1 - - [28/Mar/2025 21:58:56] "[31m[1mPOST /clean HTTP/1.1[0m" 400 -
+2025-03-28 21:59:01,478 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:01] "GET / HTTP/1.1" 200 -
+2025-03-28 21:59:01,662 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:01] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:59:01,664 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:59:01,665 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:01] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:59:10,582 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:10] "POST / HTTP/1.1" 200 -
+2025-03-28 21:59:10,619 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:10] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:59:10,621 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:59:10,621 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:59:13,440 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:59:13,447 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:59:13,565 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:13] "POST /clean HTTP/1.1" 200 -
+2025-03-28 21:59:27,898 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 21:59:33,503 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:33] "GET / HTTP/1.1" 200 -
+2025-03-28 21:59:33,704 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:33] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:59:33,704 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:59:33,706 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:33] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:59:41,530 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:41] "POST / HTTP/1.1" 200 -
+2025-03-28 21:59:41,565 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 21:59:41,566 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:41] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 21:59:41,567 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:41] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 21:59:44,363 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:59:44,374 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 21:59:44,506 - INFO - 127.0.0.1 - - [28/Mar/2025 21:59:44] "POST /clean HTTP/1.1" 200 -
+2025-03-28 22:02:17,488 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 22:02:28,723 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:28] "GET / HTTP/1.1" 200 -
+2025-03-28 22:02:28,977 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:02:28,978 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:28] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:02:28,978 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:28] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:02:37,678 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:37] "POST / HTTP/1.1" 200 -
+2025-03-28 22:02:37,718 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:37] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:02:37,718 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:02:37,719 - INFO - 127.0.0.1 - - [28/Mar/2025 22:02:37] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:03:04,561 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 22:03:04,599 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 22:03:04,762 - INFO - 127.0.0.1 - - [28/Mar/2025 22:03:04] "POST /clean HTTP/1.1" 200 -
+2025-03-28 22:07:53,773 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 22:08:09,809 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:09] "GET / HTTP/1.1" 200 -
+2025-03-28 22:08:10,034 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:10] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:08:10,036 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:08:10,037 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:10] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:08:19,168 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:19] "POST / HTTP/1.1" 200 -
+2025-03-28 22:08:19,203 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:08:19,203 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:19] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:08:19,204 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:19] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:08:31,209 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 22:08:31,253 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-28 22:08:31,417 - INFO - 127.0.0.1 - - [28/Mar/2025 22:08:31] "POST /clean HTTP/1.1" 200 -
+2025-03-28 22:09:13,473 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-03-28 22:09:18,539 - INFO - 127.0.0.1 - - [28/Mar/2025 22:09:18] "[33mPOST /clean HTTP/1.1[0m" 404 -
+2025-03-28 22:09:19,216 - INFO - 127.0.0.1 - - [28/Mar/2025 22:09:19] "[33mPOST /clean HTTP/1.1[0m" 404 -
+2025-03-28 22:09:24,769 - INFO - 127.0.0.1 - - [28/Mar/2025 22:09:24] "GET / HTTP/1.1" 200 -
+2025-03-28 22:09:24,992 - INFO - 127.0.0.1 - - [28/Mar/2025 22:09:24] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:09:24,995 - INFO - 127.0.0.1 - - [28/Mar/2025 22:09:24] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:09:24,995 - INFO - 127.0.0.1 - - [28/Mar/2025 22:09:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:14:52,645 - INFO - 127.0.0.1 - - [28/Mar/2025 22:14:52] "GET / HTTP/1.1" 200 -
+2025-03-28 22:14:52,683 - INFO - 127.0.0.1 - - [28/Mar/2025 22:14:52] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:14:52,684 - INFO - 127.0.0.1 - - [28/Mar/2025 22:14:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:14:52,685 - INFO - 127.0.0.1 - - [28/Mar/2025 22:14:52] "GET /static/js/scripts.js HTTP/1.1" 200 -
+2025-03-28 22:14:52,741 - INFO - 127.0.0.1 - - [28/Mar/2025 22:14:52] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:15:19,682 - INFO - 127.0.0.1 - - [28/Mar/2025 22:15:19] "POST / HTTP/1.1" 200 -
+2025-03-28 22:15:19,714 - INFO - 127.0.0.1 - - [28/Mar/2025 22:15:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:15:19,715 - INFO - 127.0.0.1 - - [28/Mar/2025 22:15:19] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:15:19,715 - INFO - 127.0.0.1 - - [28/Mar/2025 22:15:19] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:16:51,344 - INFO - 127.0.0.1 - - [28/Mar/2025 22:16:51] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 22:16:51,375 - INFO - 127.0.0.1 - - [28/Mar/2025 22:16:51] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 22:16:51,377 - INFO - 127.0.0.1 - - [28/Mar/2025 22:16:51] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 22:16:51,547 - INFO - 127.0.0.1 - - [28/Mar/2025 22:16:51] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 22:16:51,548 - INFO - 127.0.0.1 - - [28/Mar/2025 22:16:51] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 22:16:51,574 - INFO - 127.0.0.1 - - [28/Mar/2025 22:16:51] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 22:17:23,783 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:23] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 22:17:23,815 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:23] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 22:17:23,815 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:23] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 22:17:23,836 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:23] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 22:17:23,839 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:23] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 22:17:23,862 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:23] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 22:17:24,431 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:24] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-03-28 22:17:24,462 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:24] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-28 22:17:24,463 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:24] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-28 22:17:24,480 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 22:17:24,481 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:24] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-03-28 22:17:24,506 - INFO - 127.0.0.1 - - [28/Mar/2025 22:17:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-28 22:18:06,677 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:06] "POST / HTTP/1.1" 200 -
+2025-03-28 22:18:06,719 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:06] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:18:06,720 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:06] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:18:06,720 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:18:07,037 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:07] "GET /data_summary HTTP/1.1" 200 -
+2025-03-28 22:18:07,041 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:07] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:18:22,423 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:22] "GET / HTTP/1.1" 200 -
+2025-03-28 22:18:22,614 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:18:22,618 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:22] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:18:22,619 - INFO - 127.0.0.1 - - [28/Mar/2025 22:18:22] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:20:48,543 - INFO - 127.0.0.1 - - [28/Mar/2025 22:20:48] "GET / HTTP/1.1" 200 -
+2025-03-28 22:20:48,580 - INFO - 127.0.0.1 - - [28/Mar/2025 22:20:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:20:48,582 - INFO - 127.0.0.1 - - [28/Mar/2025 22:20:48] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:20:48,583 - INFO - 127.0.0.1 - - [28/Mar/2025 22:20:48] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:20:48,637 - INFO - 127.0.0.1 - - [28/Mar/2025 22:20:48] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:21:01,474 - INFO - 127.0.0.1 - - [28/Mar/2025 22:21:01] "POST / HTTP/1.1" 200 -
+2025-03-28 22:21:01,507 - INFO - 127.0.0.1 - - [28/Mar/2025 22:21:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-28 22:21:01,508 - INFO - 127.0.0.1 - - [28/Mar/2025 22:21:01] "[36mGET /static/images/SqueeGee%20%282%29.png HTTP/1.1[0m" 304 -
+2025-03-28 22:21:01,509 - INFO - 127.0.0.1 - - [28/Mar/2025 22:21:01] "[36mGET /static/js/scripts.js HTTP/1.1[0m" 304 -
+2025-03-28 22:21:01,818 - INFO - 127.0.0.1 - - [28/Mar/2025 22:21:01] "GET /data_summary HTTP/1.1" 200 -

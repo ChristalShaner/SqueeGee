@@ -1,27 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the toggle button
     const modeToggleButton = document.getElementById('mode-toggle');
+    const fileInput = document.getElementById('file');
+    const dataCleaningOptions = document.getElementById('data-cleaning-options');
     
-    // Check for the user's saved theme in localStorage
-    const currentMode = localStorage.getItem('mode') || 'light'; // default to light mode
-
-    // Apply the saved mode on page load
+    const currentMode = localStorage.getItem('mode') || 'light';
     document.body.classList.add(`${currentMode}-mode`);
 
-    // Toggle mode when the button is clicked
     modeToggleButton.addEventListener('click', function() {
-        // Toggle between light and dark mode
         if (document.body.classList.contains('light-mode')) {
             document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
-            localStorage.setItem('mode', 'dark');  // Save the current mode in localStorage
-            modeToggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Change icon to sun
+            localStorage.setItem('mode', 'dark');
+            modeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
         } else {
             document.body.classList.remove('dark-mode');
             document.body.classList.add('light-mode');
-            localStorage.setItem('mode', 'light');  // Save the current mode in localStorage
-            modeToggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Change icon to moon
+            localStorage.setItem('mode', 'light');
+            modeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+
+    // Show data cleaning options after a file is uploaded
+    fileInput.addEventListener('change', function() {
+        if (fileInput.files.length > 0) {
+            dataCleaningOptions.style.display = 'block';
         }
     });
 });
-

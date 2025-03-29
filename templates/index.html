@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-
+            <div id="data-cleaning-options" style="display: none;">
             <div class="card mb-3">
                 <div class="card-header">
                     <h5>Handle Missing Values</h5>
@@ -113,6 +113,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary mt-3">Upload and Clean</button>
+        </div>
         </form>
 
         {% if original_data is not none and not original_data.empty %}
@@ -221,7 +222,6 @@
             </div>
         {% endif %}
     </div>   
-    
     <!-- External JS File -->
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
