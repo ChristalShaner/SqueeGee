@@ -267,3 +267,8 @@ body.light-mode table tr:nth-child(even) td {
 body.light-mode table tr:nth-child(odd) td {
     color: #000; /* Black color for text in odd rows */
 }
+#charts-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}

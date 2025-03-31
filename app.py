@@ -4,6 +4,9 @@ import os
 import logging
 import numpy as np
 from scipy.stats import zscore
+from dash import Dash, dcc, html, Input, Output
+import plotly.express as px
+
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "uploads"
@@ -11,6 +14,9 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Configure logging file
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+dash_app = Dash(__name__, server=app, url_base_pathname="/dash/")
+
 
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -106,6 +112,17 @@ def home():
                            change_info=change_info, 
                            cleaned_file_path=cleaned_file_path)
 
+dash_app.layout = html.Div([
+    html.H1("SqueeGee Data Visualization"),
+    dcc.Dropdown(id="chart_type", options=[
+        {"label": "Bar Chart", "value": "bar"},
+        {"label": "Scatter Plot", "value": "scatter"},
+        {"label": "Box Plot", "value": "box"}
+    ], value="bar"),
+    dcc.Graph(id="chart_output")
+])
+
+
 @app.route("/data_summary")
 def data_summary():
     """Provide JSON summary for visualization."""
@@ -114,13 +131,40 @@ def data_summary():
         df = pd.read_csv(file_path)
         if df.empty:
             return jsonify({"error": "Cleaned data is empty"}), 400
+        
+        # Include columns for X and Y axis selection
         summary = {
             "columns": df.columns.tolist(),
             "numeric_columns": df.select_dtypes(include=[np.number]).columns.tolist(),
+            "categorical_columns": df.select_dtypes(include=[object]).columns.tolist(),  # Add categorical columns
             "data": df.to_dict(orient="records"),
         }
         return jsonify(summary)
     return jsonify({"error": "No cleaned data available"}), 404
+
+@dash_app.callback(
+    Output("chart_output", "figure"),
+    [Input("chart_type", "value")]
+)
+def update_chart(chart_type):
+    file_path = os.path.join(UPLOAD_FOLDER, "cleaned_data.csv")
+    if os.path.exists(file_path):
+        df = pd.read_csv(file_path)
+        if df.empty:
+            return px.scatter(title="No Data Available")
+        
+        numeric_cols = df.select_dtypes(include=[np.number]).columns
+        if len(numeric_cols) < 2:
+            return px.scatter(title="Not Enough Numeric Data")
+        
+        if chart_type == "bar":
+            return px.bar(df, x=numeric_cols[0], y=numeric_cols[1], title="Bar Chart")
+        elif chart_type == "scatter":
+            return px.scatter(df, x=numeric_cols[0], y=numeric_cols[1], title="Scatter Plot")
+        elif chart_type == "box":
+            return px.box(df, x=numeric_cols[0], y=numeric_cols[1], title="Box Plot")
+    
+    return px.scatter(title="No Data Available")
 
 @app.route("/download")
 def download_file():

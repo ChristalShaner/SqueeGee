@@ -160,41 +160,77 @@
             </table>
             
             <h3 class="mt-5">Data Visualization</h3>
+
+            <div class="mb-3">
+                <label for="x-axis">Select X-Axis:</label>
+                <select id="x-axis" class="form-control"></select>
+            </div>
+
+            <div class="mb-3">
+                <label for="y-axis">Select Y-Axis:</label>
+                <select id="y-axis" class="form-control"></select>
+            </div>
+
+            <div class="mb-3">
+                <label for="chart-type">Select Chart Type:</label>
+                <select id="chart-type" class="form-control">
+                    <option value="scatter">Scatter Plot</option>
+                    <option value="bar">Bar Chart</option>
+                    <option value="box">Box Plot</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary" id="generate-chart">Generate Chart</button>
+
             <div id="charts-container" class="mt-3"></div>
-            
-            <!-- Include Plotly -->
+
             <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
             <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch("/data_summary")
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.error) {
-                            document.getElementById("charts-container").innerHTML = "<p>No data available for visualization.</p>";
-                            return;
-                        }
-            
-                        let numericCols = data.numeric_columns;
-                        if (numericCols.length === 0) return;
-            
-                        let traces = [];
-                        numericCols.forEach(col => {
-                            let values = data.data.map(row => row[col]);
-            
-                            traces.push({
-                                x: values,
-                                type: "histogram",
-                                name: col
-                            });
-                        });
-            
-                        let layout = { title: "Data Distribution", barmode: "overlay" };
-                        Plotly.newPlot("charts-container", traces, layout);
-                    })
-                    .catch(error => console.error("Error fetching data:", error));
-            });
-            </script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    fetch("/data_summary")
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.error) {
+                                document.getElementById("charts-container").innerHTML = "<p>No data available for visualization.</p>";
+                                return;
+                            }
 
+                            let numericCols = data.numeric_columns;
+                            let xSelect = document.getElementById("x-axis");
+                            let ySelect = document.getElementById("y-axis");
+
+                            numericCols.forEach(col => {
+                                let optionX = new Option(col, col);
+                                let optionY = new Option(col, col);
+                                xSelect.add(optionX);
+                                ySelect.add(optionY);
+                            });
+
+                            document.getElementById("generate-chart").addEventListener("click", function() {
+                                let xValue = xSelect.value;
+                                let yValue = ySelect.value;
+                                let chartType = document.getElementById("chart-type").value;
+
+                                if (!xValue || !yValue) {
+                                    alert("Please select both X and Y axes.");
+                                    return;
+                                }
+
+                                let trace = {
+                                    x: data.data.map(row => row[xValue]),
+                                    y: data.data.map(row => row[yValue]),
+                                    mode: chartType === "scatter" ? "markers" : undefined,
+                                    type: chartType,
+                                    name: `${xValue} vs ${yValue}`
+                                };
+
+                                let layout = { title: `${xValue} vs ${yValue}` };
+                                Plotly.newPlot("charts-container", [trace], layout);
+                            });
+                        })
+                        .catch(error => console.error("Error fetching data:", error));
+                });
+            </script>
 
             {% if cleaned_file_path %}
             <div class="mt-4">
