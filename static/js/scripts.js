@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dataCleaningOptions = document.getElementById('data-cleaning-options');
     let dropArea = document.getElementById("drop-area");
     let fileNameDisplay = document.getElementById("file-name"); // Ensure there's an element for file name
+    
 
     // Load mode from local storage
     const currentMode = localStorage.getItem('mode') || 'light';
@@ -63,4 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateFileName(file) {
         fileNameDisplay.textContent = `Selected File: ${file.name}`;
     }
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
 });
