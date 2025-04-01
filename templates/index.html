@@ -33,10 +33,11 @@
                     <h5>Upload CSV File</h5>
                 </div>
                 <div class="card-body">
-                    <div class="form-group">
-                        <label for="file">Choose a CSV file:</label>
-                        <input type="file" name="file" class="form-control" id="file" required>
+                    <div id="drop-area" class="drop-area">
+                        <p>Drag & Drop CSV file here or <span class="browse-text">browse</span></p>
+                        <input type="file" name="file" class="file-input" id="file" required accept=".csv">
                     </div>
+                    <p id="file-name" class="file-name"></p> <!-- Display selected file name -->
                 </div>
             </div>
             <div id="data-cleaning-options" style="display: none;">
