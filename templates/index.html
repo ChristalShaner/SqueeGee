@@ -8,6 +8,9 @@
     
     <!-- External CSS File -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <!--Telegraf Font Family-->
+    <link href="https://fonts.cdnfonts.com/css/telegraf" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +41,7 @@
                 </div>
                 <div class="card-body">
                     <div id="drop-area" class="drop-area">
+                        <img id="chicky-image" src="{{ url_for('static', filename='images/chicky-file-upload.png') }}" alt="Chicky" style="width:340px; height:340px;">
                         <p>Drag & Drop CSV file here or <span class="browse-text">browse</span></p>
                         <input type="file" name="file" class="file-input" id="file" required accept=".csv">
                     </div>
@@ -107,7 +111,7 @@
                 <div class="card-header d-flex justify-content-between">
                     <h5>Custom Data Rules</h5>
                     <i class="fas fa-info-circle ms-2" data-bs-toggle="tooltip" 
-                    title="Define custom rules for data cleaning based on your specific needs."></i>
+                    title="Feeling egg-stra? Define custom rules for data cleaning based on your specific needs."></i>
                 </div>
                 <div class="card-body">
                     <div class="form-group">

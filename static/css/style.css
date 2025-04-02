@@ -1,4 +1,9 @@
 /* static/css/style.css */
+
+body {
+    font-family: 'Telegraf', sans-serif !important;
+}
+
 .highlight {
     background-color: #ffffff;
 }
@@ -307,3 +312,74 @@ body.light-mode table tr:nth-child(odd) td {
     margin-top: 10px;
     font-weight: bold;
 }
+#drop-area {
+    border: 2px dashed #555;  /* Dark gray border */
+    color: #fff;              /* White text for better contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Drag and Drop Styling */
+.drop-area {
+    border: 2px dashed #555; /* Dark gray border */
+    color: #333; /* Dark gray text */
+    padding: 15px; /* Smaller padding for a compact look */
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f8f9fa; /* Light gray background */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Highlight effect on hover */
+.drop-area:hover, .drop-area.highlight {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+/* Dark Mode */
+body.dark-mode .drop-area {
+    border: 2px dashed #888; /* Lighter gray border */
+    color: #ddd; /* Light gray text */
+    background-color: #2c2c2c; /* Dark background */
+}
+
+body.dark-mode .drop-area:hover, body.dark-mode .drop-area.highlight {
+    background-color: #3a3a3a; /* Darker hover effect */
+}
+
+/* Adjust text color */
+.drop-area p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #444; /* Dark gray text */
+}
+
+body.dark-mode .drop-area p {
+    color: #ccc; /* Light gray text in dark mode */
+}
+
+/* "Browse" text styling */
+.browse-text {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #007bff; /* Blue accent */
+}
+
+body.dark-mode .browse-text {
+    color: #5be3e3; /* Cyan accent in dark mode */
+}
+
+/* Hide file input */
+.file-input {
+    display: none;
+}
+
+/* Selected file name styling */
+.file-name {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
