@@ -6,10 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let fileNameDisplay = document.getElementById("file-name"); // Ensure there's an element for file name
     const chickyImage = document.getElementById("chicky-image"); // Get the image element
 
-    // Load mode from local storage
-    const currentMode = localStorage.getItem('mode') || 'light';
-    document.body.classList.add(`${currentMode}-mode`);
-
     // Function to toggle images based on mode
     function updateChickyImage(mode) {
         if (mode === 'dark') {
@@ -19,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Set the correct image on page load
+    // Load mode from local storage
+    const currentMode = localStorage.getItem('mode') || 'light';
+    document.body.classList.add(`${currentMode}-mode`);
     updateChickyImage(currentMode);
 
     modeToggleButton.addEventListener('click', function() {
@@ -28,13 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.add('dark-mode');
             localStorage.setItem('mode', 'dark');
             modeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
-            updateChickyImage('dark'); // Update image when toggling
         } else {
             document.body.classList.remove('dark-mode');
             document.body.classList.add('light-mode');
             localStorage.setItem('mode', 'light');
             modeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
-            updateChickyImage('light'); // Update image when toggling
         }
     });
 
@@ -46,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Prevent default behavior
+    // Prevent default behavior for drag events
     ["dragenter", "dragover", "dragleave", "drop"].forEach(event => {
         dropArea.addEventListener(event, e => e.preventDefault(), false);
     });
@@ -79,9 +75,33 @@ document.addEventListener('DOMContentLoaded', function() {
         fileNameDisplay.textContent = `Selected File: ${file.name}`;
     }
 
-    // Initialize Bootstrap tooltips
+    // Tooltip initialization for bootstrap
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.forEach(function (tooltipTriggerEl) {
         new bootstrap.Tooltip(tooltipTriggerEl);
     });
+
+    // Scroll to "Original Data" if cleaning just happened
+    const scrollFlag = document.getElementById("scroll-flag");
+    if (scrollFlag && scrollFlag.dataset.scroll === "original-data") {
+        const target = document.getElementById("original-data");
+        if (target) {
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 300);
+        }
+    }
+
+    // Scroll to "Data Visualization" section when clicking "Generate Chart"
+    const generateChartButton = document.getElementById("generate-chart");
+    if (generateChartButton) {
+        generateChartButton.addEventListener("click", function() {
+            const target = document.getElementById("charts-container");
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                }, 300);
+            }
+        });
+    }
 });

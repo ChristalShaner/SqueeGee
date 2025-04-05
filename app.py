@@ -110,7 +110,8 @@ def home():
                            original_data=original_data_preview, 
                            cleaned_data=cleaned_data.head(5), 
                            change_info=change_info, 
-                           cleaned_file_path=cleaned_file_path)
+                           cleaned_file_path=cleaned_file_path,
+                           scroll_to_original=True)
 
 dash_app.layout = html.Div([
     html.H1("SqueeGee Data Visualization"),

@@ -50,7 +50,7 @@
             </div>
             <div id="data-cleaning-options" style="display: none;">
             <div class="card mb-3">
-                <div class="card-header d-flex justify-content-between">
+                <div class="card-header d-flex justify-content-between" id="handle-missing-values">
                     <h5>Handle Missing Values</h5>
                     <i class="fas fa-info-circle ms-2" data-bs-toggle="tooltip" 
                     title="Choose how to handle missing values in the dataset. Options include removing or filling missing values."></i>
@@ -134,7 +134,7 @@
         </form>
 
         {% if original_data is not none and not original_data.empty %}
-            <h3 class="mt-5">Original Data (Preview - First 5 Rows)</h3>
+            <h3 class="mt-5" id="original-data">Original Data (Preview - First 5 Rows)</h3>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -277,5 +277,9 @@
     </div>   
     <!-- External JS File -->
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    {% if scroll_to_original %}
+    <div id="scroll-flag" data-scroll="original-data"></div>
+    {% endif %}
+
 </body>
 </html>
