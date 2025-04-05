@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
             updateFileName(fileInput.files[0]); // Display file name
             dataCleaningOptions.style.display = 'block';
         }
+        const scrollTarget = document.getElementById("handle-missing-values");
+        if (scrollTarget) {
+            setTimeout(() => {
+                scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 300); // Slight delay to allow form to render
+        }
     });
 
     // Prevent default behavior for drag events
